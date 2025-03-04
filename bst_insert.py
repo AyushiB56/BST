@@ -37,4 +37,17 @@ def insert(root, value):
                 current_node.right = bst(value)
                 break
 
-    return self
+    return root
+
+
+
+
+# root= const(tree_dict)
+
+# tree_output=insert(root,4)
+# tree_output=insert(root,1)
+# tree_output=insert(root,6)
+# tree_output=insert(root,20)
+# tree_output=insert(root,15)
+# tree_output=insert(root,170)
+# tree_output=insert(root,23)
