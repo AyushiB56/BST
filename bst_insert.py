@@ -23,7 +23,7 @@ def const(tree_dict):
 
 def insert(root, value):
     current_node= root
-    while current_node is not None:
+    while True:
         if value < current_node.value:
             if current_node.left is not None:
                 current_node= current_node.left
