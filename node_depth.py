@@ -23,19 +23,15 @@ class BinaryTree:
 
 #recursion
 def nodeDepths(root,depth=0):
-   if root is None:
-     return 0
-    left_depth= nodeDepths(root.left,depth+1)
-    right_depth=nodeDepths(root.right,depth+1)
-
-  return depth+left_depth+right_depth
+    cuurent_node=root
+    if root is None:
+         return 0
+    left_depth= nodeDepths(cuurent_node.left,depth+1)
+    right_depth=nodeDepths(cuurent_node.right,depth+1)
+    return depth+left_depth+right_depth
 
 class BinaryTree:
     def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
-
-
-
-
