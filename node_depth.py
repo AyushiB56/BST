@@ -28,7 +28,7 @@ def nodeDepths(root,depth=0):
     left_depth= nodeDepths(root.left,depth+1)
     right_depth=nodeDepths(root.right,depth+1)
 
-  return left_depth+right_depth
+  return depth+left_depth+right_depth
 
 class BinaryTree:
     def __init__(self, value):
